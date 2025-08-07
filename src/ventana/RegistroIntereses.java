@@ -58,6 +58,7 @@ public class RegistroIntereses extends JDialog {
 		super(principal,"Registro de Intereses", true);
 		this.principal = principal;
 		setBounds(100, 100, 964, 730);
+		setResizable(false);
 		getContentPane().setLayout(new BorderLayout());
 		contenido.setBackground(new Color(255, 255, 255));
 		contenido.setBorder(new EmptyBorder(5, 5, 5, 5));

@@ -60,6 +60,9 @@ public class Principal extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1080, 800);
 		
+		setResizable(false);
+
+		
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 		
@@ -69,7 +72,7 @@ public class Principal extends JFrame {
 		menuBar.add(mnNewMenu);
 		
 		JMenuItem mntmNewMenuItem_1 = new JMenuItem("Login");
-		mntmNewMenuItem_1.setFont(new Font("Arial", Font.PLAIN, 12));
+		mntmNewMenuItem_1.setFont(new Font("Arial", Font.PLAIN, 18));
 		mntmNewMenuItem_1.setIcon(new ImageIcon(Principal.class.getResource("/img/cuenta.png")));
 		mntmNewMenuItem_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -85,7 +88,12 @@ public class Principal extends JFrame {
 		mnNewMenu.add(mntmNewMenuItem_1);
 		
 		JMenuItem mntmNewMenuItem = new JMenuItem("Salir");
-		mntmNewMenuItem.setFont(new Font("Arial", Font.PLAIN, 12));
+		mntmNewMenuItem.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				System.exit(0); // Cierra la aplicación
+			}
+		});
+		mntmNewMenuItem.setFont(new Font("Arial", Font.PLAIN, 18));
 		mntmNewMenuItem.setIcon(new ImageIcon(Principal.class.getResource("/img/cerrar-sesion.png")));
 		mnNewMenu.add(mntmNewMenuItem);
 		

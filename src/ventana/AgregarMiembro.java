@@ -51,6 +51,7 @@ public class AgregarMiembro extends JDialog {
 		super(gestionMiembros,"Agregar Miembro", true);
 		this.gestionMiembros = gestionMiembros;
 		setBounds(100, 100, 550, 400);
+		setResizable(false);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBackground(new Color(255, 255, 255));
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));

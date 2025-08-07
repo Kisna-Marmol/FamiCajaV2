@@ -66,6 +66,8 @@ public class ReporteGeneral extends JDialog {
 		super(principal,"Reporte General", true);
 		this.principal = principal;
 		setBounds(100, 100, 600, 600);
+		setResizable(false);
+
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBackground(new Color(255, 255, 255));
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));

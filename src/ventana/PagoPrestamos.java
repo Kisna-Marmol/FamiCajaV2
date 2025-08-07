@@ -72,6 +72,8 @@ public class PagoPrestamos extends JDialog {
 		super(principal,"Pago de Prestamo", true);
 		this.principal = principal;
 		setBounds(100, 100, 1000, 950);
+		setResizable(false);
+
 		getContentPane().setLayout(new BorderLayout());
 		contenido.setBackground(new Color(255, 255, 255));
 		contenido.setBorder(new EmptyBorder(5, 5, 5, 5));

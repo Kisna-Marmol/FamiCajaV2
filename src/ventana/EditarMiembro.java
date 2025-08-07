@@ -72,6 +72,8 @@ public class EditarMiembro extends JDialog {
 		this.miembroId = miembro.getId();
 		
 		setBounds(100, 100, 550, 400);
+		setResizable(false);
+
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);

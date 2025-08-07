@@ -69,6 +69,8 @@ public class SolicitudPrestamos extends JDialog {
 		setTitle("Solicitud de Prestamos");
 		this.principal = principal;
 		setBounds(100, 100, 1080, 950);
+		setResizable(false);
+
 		getContentPane().setLayout(new BorderLayout());
 		contenido.setBackground(new Color(255, 255, 255));
 		contenido.setBorder(new EmptyBorder(5, 5, 5, 5));

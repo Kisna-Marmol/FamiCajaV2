@@ -54,6 +54,8 @@ public class GestionDeMiembros extends JDialog {
 		super(principal,"Gestion de Miembros", true);
 		this.principal = principal;
 		setBounds(100, 100, 1080, 800);
+		setResizable(false);
+
 		getContentPane().setLayout(new BorderLayout());
 		contenido.setBackground(new Color(255, 255, 255));
 		contenido.setBorder(new EmptyBorder(5, 5, 5, 5));

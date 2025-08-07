@@ -63,6 +63,8 @@ public class Login extends JDialog {
 		setFont(new Font("Arial", Font.PLAIN, 20));
 		setTitle("Login");
 		setBounds(100, 100, 712, 500);
+		setResizable(false);
+
 		getContentPane().setLayout(null);
 		contentPanel.setBounds(0, 0, 698, 463);
 		contentPanel.setBackground(Color.WHITE);

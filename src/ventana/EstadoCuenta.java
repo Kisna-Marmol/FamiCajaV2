@@ -71,6 +71,8 @@ public class EstadoCuenta extends JDialog {
 		super(principal,"Estado de Cuenta", true);
 		this.principal = principal;
 		setBounds(100, 100, 500, 658);
+		setResizable(false);
+
 		getContentPane().setLayout(new BorderLayout());
 		contenido.setBackground(new Color(255, 255, 255));
 		contenido.setBorder(new EmptyBorder(5, 5, 5, 5));

@@ -67,6 +67,8 @@ public class GestionDeAportes extends JDialog {
 		super(principal,"Gestion de Aportes", true);
 		this.principal = principal;
 		setBounds(100, 100, 1080, 950);
+		setResizable(false);
+
 		getContentPane().setLayout(new BorderLayout());
 		contenido.setBackground(new Color(255, 255, 255));
 		getContentPane().add(contenido, BorderLayout.CENTER);
